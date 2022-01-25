@@ -1,0 +1,14 @@
+**Sapphire:** A member under **"1000"** Total Level
+**Emerald:** A member who has a Total Level of **"1000"** or higher
+**Ruby:** A member who has a Total Level of **"1500"**or higher.
+**Diamond:** A member who has a Total Level of **"1750"** or higher
+**Dragonstone:** A member who has a Total Level of **"2000"** or higher
+**Onyx:** A member who has a Total Level of  **"2100"** or higher
+**Zenyte:** A member who has a Total Level of **"2200"** or higher
+**Maxed:** A member who has a Total Level of **"2277"**
+
+**Event Coordinators** are assigned to willing and trusted members, tasked with planning and executing Clan Events within our community. Essentially a pre-Staff role, our Leadership will reach out to (or accept applications from) prospective Coordinators to assign this role.
+
+**Serenists** are part of our management team. These Admins will be assigned different jobs and given responsibilities. If these responsibilities are not met, they are de-ranked from Staff.
+
+**Deputy Owners** are Clan Leaders who take responsibility for all of the clan's actions, step in to resolve any issues, and work closely with the Serenists rank to make sure we appeal to all community needs.
