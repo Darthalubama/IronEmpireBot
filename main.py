@@ -5,6 +5,9 @@ import json
 
 client = discord.Client()
 
+application = ["Application:"]
+appResponse = "**if you need help joining the clan ingame, please contact a staff member.**"
+
 def get_quote():
   response = requests.get("https://zenquotes.io/api/random")
   json_data = json.loads(response.text)
@@ -18,8 +21,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+  msg = message.content
   if message.author == client.user:
     return
+  
 
   elif message.content.startswith('$inspire'):
     quote = get_quote()
@@ -42,8 +47,17 @@ async def on_message(message):
     
     await message.channel.send(ranks)
 
-
+  elif any(word in msg for word in application):
+    await message.channel.send(appResponse)
 
 
 client.run(os.getenv('token'))
 
+
+from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def index():
+  return "Bot up and running"
+if __name__ == '__main__':
+  app.run(host="0.0.0.0",debug=True,port=8080)
