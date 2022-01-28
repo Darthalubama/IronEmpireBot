@@ -18,7 +18,8 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=ghcr.io/${{ github.repository_owner }}/iron-empire-discord-bot
+          REPO_OWNER=$(echo 'console.log("${{ github.repository_owner }}".toLowerCase())' | node -);
+          DOCKER_IMAGE=ghcr.io/${REPO_OWNER}/iron-empire-discord-bot
           VERSION=noop
           if [ "${{ github.event_name }}" = "schedule" ]; then
             VERSION=nightly
